@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <densityMapHeightTypes>
+        <densityMapHeightType fillTypeName="oat" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false" >
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+            <textures diffuse="fillPlanes/rye_diffuse.png" normal="fillPlanes/rye_normal.png" distance="fillPlanes/distance/ryeDistance_diffuse.png" />
+        </densityMapHeightType>
+    </densityMapHeightTypes>
+</map>

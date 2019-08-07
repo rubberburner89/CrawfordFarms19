@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <farmlands densityMapFilename="maps/map01/map_farmland.grle" numChannels="7" pricePerHa="50000">
+        <farmland id="1"  priceScale="0.6" npcName="NPC_DE_01" defaultFarmProperty="true"/> <!--Main Farm (Sheep)-->
+        <farmland id="2"  priceScale="0.7" npcName="NPC_DE_01" />
+        <farmland id="3"  priceScale="1" npcName="NPC_DE_02" /> 
+        <farmland id="4"  priceScale="1" npcName="NPC_DE_03" /> 
+        <farmland id="5"  priceScale="1" npcName="NPC_DE_04" />
+        <farmland id="6"  priceScale="0.75" npcName="NPC_DE_05" /> <!--Pig Farm-->
+        <farmland id="7"  priceScale="0.8" npcName="NPC_DE_05" />
+        <farmland id="8"  priceScale="0.9" npcName="NPC_DE_03" />
+        <farmland id="9"  priceScale="1" npcName="NPC_DE_10" /> <!--Church-->
+        <farmland id="10" priceScale="0.88" npcName="NPC_DE_06" />
+        <farmland id="11" priceScale="1" npcName="NPC_DE_06" />
+        <farmland id="12" priceScale="0.9" npcName="NPC_DE_06" />
+        <farmland id="13" priceScale="1" npcName="NPC_DE_07" />
+        <farmland id="14" priceScale="1" npcName="NPC_DE_07" /> 
+        <farmland id="15" priceScale="1" npcName="NPC_DE_07" />
+        <farmland id="16" priceScale="1" npcName="NPC_DE_08" /> 
+        <farmland id="17" priceScale="1" npcName="NPC_DE_08" /> <!--BGA-->
+        <farmland id="18" priceScale="1" npcName="NPC_DE_09" />
+        <farmland id="19" priceScale="0.75" npcName="NPC_DE_09" /> <!--House by BGA-->
+        <farmland id="20" priceScale="1" npcName="NPC_DE_09" />
+        <farmland id="21" priceScale="1" npcName="NPC_DE_10" />
+        <farmland id="22" priceScale="1" npcName="NPC_DE_10" />
+        <farmland id="23" priceScale="1" npcName="NPC_DE_11" /> <!--US Border Field-->
+        <farmland id="24" priceScale="1" npcName="NPC_DE_11" />
+        <farmland id="25" priceScale="4" npcName="NPC_DE_12" /> <!--Forest Middle South West-->
+        <farmland id="26" priceScale="4" npcName="NPC_DE_12" /> <!--Forest South West-->
+        <farmland id="27" priceScale="1" npcName="NPC_DE_12" />
+        <farmland id="28" priceScale="4" npcName="NPC_DE_13" /> <!--Forest Middle West-->
+        <farmland id="29" priceScale="1" npcName="NPC_DE_13" />
+        <farmland id="30" priceScale="1" npcName="NPC_DE_13" />
+        <farmland id="31" priceScale="4" npcName="NPC_DE_14" /> <!--Small Forest 01-->
+        <farmland id="32" priceScale="4" npcName="NPC_DE_14" /> <!--Small Forest 02-->
+        <farmland id="33" priceScale="1" npcName="NPC_DE_14" />
+        <farmland id="34" priceScale="1" npcName="NPC_DE_14" />
+        <farmland id="35" priceScale="1" npcName="NPC_DE_14" />
+        <farmland id="36" priceScale="4" npcName="NPC_DE_14" /> <!--Forest Middle North West-->
+        <farmland id="37" priceScale="2" npcName="NPC_DE_15" /> <!--Forest Main West-->
+        <farmland id="38" priceScale="4" npcName="NPC_DE_15" /> <!--Middle Forest South East-->
+        <farmland id="39" priceScale="1" npcName="NPC_DE_16" />
+        <farmland id="40" priceScale="4" npcName="NPC_DE_15" /> <!--Small Forest South East 01-->
+        <farmland id="41" priceScale="1" npcName="NPC_DE_16" />
+        <farmland id="42" priceScale="4" npcName="NPC_DE_16" /> <!--Small Forest South East 02-->
+        <farmland id="43" priceScale="4" npcName="NPC_DE_18" /> <!--Small Forest South East 03-->
+        <farmland id="44" priceScale="1" npcName="NPC_DE_18" />
+        <farmland id="45" priceScale="0.3" npcName="NPC_DE_17" /> <!--Useless Area South East-->
+        <farmland id="46" priceScale="1" npcName="NPC_DE_18" />  <!--Small Grass North-->
+        <farmland id="47" priceScale="1" npcName="NPC_DE_18" />
+        <farmland id="48" priceScale="0.6" npcName="NPC_DE_19" />  <!--Grass Area South East-->
+        <farmland id="49" priceScale="0.6" npcName="NPC_DE_20" />  <!--Small Grass Area South East-->
+        <farmland id="50" priceScale="2" npcName="NPC_DE_20" /> <!--Tiny Forest South East-->
+        <farmland id="51" priceScale="1" npcName="NPC_DE_20" /> <!-- Forest East-->
+        <farmland id="52" priceScale="1" npcName="NPC_DE_20" /> 
+        <farmland id="53" priceScale="1" npcName="NPC_DE_20" /> <!-- Far East Field-->
+        <farmland id="54" priceScale="4" npcName="NPC_DE_20" />  <!--Small Forest North-->
+        <farmland id="55" priceScale="1" npcName="NPC_DE_20" />  <!--Weird Shape Forest North East-->
+		<farmland id="56" priceScale="1" npcName="NPC_DE_20" />  
+		<farmland id="57" priceScale="1" npcName="NPC_DE_20" />  <!--Largest Field-->
+		<farmland id="58" priceScale="1" npcName="NPC_DE_20" />  <!--Grass & Forest North of Pigs-->		
+		<farmland id="59" priceScale="1" npcName="NPC_DE_20" />  		
+		<farmland id="60" priceScale="1" npcName="NPC_DE_20" />  		
+		<farmland id="61" priceScale="4" npcName="NPC_DE_20" />  <!--Far East Forest-->		
+		<farmland id="62" priceScale="0.7" npcName="NPC_DE_20" defaultFarmProperty="true"/>  
+		<farmland id="63" priceScale="1" npcName="NPC_DE_20" />  <!--Edge Border-->				
+		<farmland id="64" priceScale="4" npcName="NPC_DE_20" />  <!--North East Forest-->
+		<farmland id="65" priceScale="1" npcName="NPC_DE_20" />  <!--Far North Field-->
+		<farmland id="66" priceScale="0.8" npcName="NPC_DE_20" />  <!--Far North House-->
+		<farmland id="67" priceScale="4" npcName="NPC_DE_20" />  <!--Far North Forest-->
+		<farmland id="68" priceScale="0.8" npcName="NPC_DE_20" />  <!--Hawksley Farm-->
+		<farmland id="69" priceScale="0.8" npcName="NPC_DE_20" />  
+		<farmland id="70" priceScale="1" npcName="NPC_DE_20" />  <!--North Forest-->
+		<farmland id="71" priceScale="1" npcName="NPC_DE_20" />  
+<!--		<farmland id="72" priceScale="0.9" npcName="NPC_DE_20" />  <!--Small Grass & Forest North-->
+	
+    </farmlands>
+</map>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

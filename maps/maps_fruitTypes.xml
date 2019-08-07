@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <fruitTypes>
+        <fruitType name="rye" shownOnMap="true" useForFieldJob="false">
+            <general startStateChannel="0" numStateChannels="4" />
+            <cultivation needsSeeding="true" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.05" />
+            <harvest minHarvestingGrowthState="4" maxHarvestingGrowthState="6" cutState="8" minForageGrowthState="3" allowsPartialGrowthState="false" literPerSqm="0.89" />
+            <growth witheringNumGrowthStates="8" numGrowthStates="7" growthStateTime="24000000" resetsSpray="true" groundTypeChangeGrowthState="-1" groundTypeChanged="NONE" growthRequiresLime="true" />
+            <windrow name="straw" litersPerSqm="7.00" />
+            <options lowSoilDensityRequired="true" increasesSoilDensity="false" consumesLime="true" startSprayState="0" />
+            <destruction filterStart="2" filterEnd="7" state="8" />
+            <mapColors default="0.3864 0.3396 0.0340 1" colorBlind="0.4508 0.1442 0.0285 1"/>
+        </fruitType>
+    </fruitTypes>
+	
+	<fruitTypeCategories>
+        <fruitTypeCategory name="GRAINHEADER" >WHEAT BARLEY OAT CANOLA SOYBEAN RYE</fruitTypeCategory>
+        <fruitTypeCategory name="MAIZEHEADER" >MAIZE SUNFLOWER</fruitTypeCategory>
+        <fruitTypeCategory name="MAIZECUTTER" >MAIZE</fruitTypeCategory>
+        <fruitTypeCategory name="DIRECTCUTTER" >GRASS WHEAT BARLEY OAT CANOLA SOYBEAN RYE</fruitTypeCategory>
+        <fruitTypeCategory name="PICKUP" >GRASS DRYGRASS</fruitTypeCategory>
+        <fruitTypeCategory name="SOWINGMACHINE" >WHEAT BARLEY OAT CANOLA SOYBEAN OILSEEDRADISH GRASS RYE</fruitTypeCategory>
+        <fruitTypeCategory name="SUGARCANE_PLANTER" >SUGARCANE</fruitTypeCategory>
+        <fruitTypeCategory name="PLANTER" >MAIZE SUNFLOWER SOYBEAN SUGARBEET COTTON</fruitTypeCategory>
+        <fruitTypeCategory name="WEEDER" >OILSEEDRADISH GRASS</fruitTypeCategory>
+    </fruitTypeCategories>
+
+    <fruitTypeConverters>
+        <fruitTypeConverter name="FORAGEHARVESTER">
+			<converter from="RYE"       to="CHAFF"         factor="4.0" windrowFactor="1.0" /> <!-- straw 1:1 conversion -->
+        </fruitTypeConverter>
+        <fruitTypeConverter name="MOWER">
+			<converter from="RYE"       to="STRAW"         factor="1.0" windrowFactor="1.0" />
+        </fruitTypeConverter>
+    </fruitTypeConverters>
+</map>

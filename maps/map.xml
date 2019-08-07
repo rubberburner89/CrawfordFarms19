@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<map imageFilename="maps/pda_map_H.png" width="2048" height="2048">
+    <filename>maps/map01.i3d</filename>
+    <sounds filename="$data/maps/mapUS_sound.xml"/>
+    <environment filename="$data/maps/mapUS_environment.xml"/>
+    <culling xzOffset="100"/>
+<!--    <hotspots>
+        <hotspot name="Shop" fullName="$l10n_map_shop" imageUVs="520 8 240 240" xMapPos="180" zMapPos="-916" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_TRIGGERS"/>
+        <hotspot name="Cows" fullName="$l10n_animals_cowPasture" imageUVs="520 264 240 240" xMapPos="264" zMapPos="411" blinking="false" persistent="false" showName="false" hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
+        <hotspot name="Sheep" fullName="$l10n_animals_sheepPasture" imageUVs="264 264 240 240" xMapPos="289" zMapPos="140" blinking="false" persistent="false" showName="false" hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
+        <hotspot name="Pigs" fullName="$l10n_animals_pigPasture" imageUVs="776 264 240 240" xMapPos="1" zMapPos="-75.5" blinking="false" persistent="false" showName="false" hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
+        <hotspot name="Chickens" fullName="$l10n_animals_chickenCoop" imageUVs="8 264 240 240" xMapPos="431" zMapPos="215.5" blinking="false" persistent="false" showName="false" hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
+    </hotspots> -->
+    <additionalFiles>
+        <additionalFile filename="$data/shared/materialHolders/tensionBeltMaterialHolder.i3d"/>
+        <additionalFile filename="$data/shared/materialHolders/tireTrackMaterialHolder.i3d"/>
+        <additionalFile filename="$data/shared/materialHolders/glowEffectMaterialHolder.i3d"/>
+        <additionalFile filename="$data/shared/mapTargetMarker.i3d"/>
+        <additionalFile filename="$data/particleSystems/particle_materialHolder.i3d"/>
+        <additionalFile filename="$data/particleSystems/effect_materialHolder.i3d"/>
+        <additionalFile filename="$data/particleSystems/cutterEffect_materialHolder.i3d"/>
+        <additionalFile filename="$data/fillPlanes/fillPlane_materialHolder.i3d"/>
+		<additionalFile filename="fillPlanes/fillPlane_materialHolder.i3d" />
+        <additionalFile filename="particleSystems/effect_materialHolder.i3d" />
+        <additionalFile filename="particleSystems/particle_materialHolder.i3d" />
+        <additionalFile filename="particleSystems/cutterEffect_materialHolder.i3d" />
+    </additionalFiles>
+    <tipTriggers>
+        <!-- SILO -->
+        <tipTrigger index="FARM_SILO" stationName="station_farmSilo" appearsOnPDA="false" isAreaTrigger="true" isSellingPoint="false" triggerWidth="3" supportsExtension="true" storageRadius="75">
+            <fillType name="wheat" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true"/>
+            <fillType name="barley" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true"/>
+            <fillType name="rape" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true"/>
+            <fillType name="maize" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true"/>
+            <fillType name="sunflower" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true"/>
+            <fillType name="soybean" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true"/>
+            <fillType name="oat" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true"/>
+        </tipTrigger>
+        <!-- BGA -->
+        <tipTrigger index="BGA_BUNKER" stationName="station_bgaBunkerGCV" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="2.5" litersForFullPriceDrop="300000" fullPriceRecoverHours="48">
+            <fillType name="silage" priceScale="1" supportsGreatDemand="false" disablePriceDrop="false" allowTrailers="false"/>
+            <fillType name="liquidManure" priceScale="1" supportsGreatDemand="false" disablePriceDrop="false" allowTrailers="true"/>
+            <fillType name="manure" priceScale="1" supportsGreatDemand="false" disablePriceDrop="false" allowTrailers="false"/>
+        </tipTrigger>
+<!--        <tipTrigger index="BGA_BUNKER_SILO" stationName="station_bgaBunkerSilo" appearsOnPDA="false" isAreaTrigger="true" isSellingPoint="false" triggerWidth="6">
+            <fillType name="chaff" priceScale="0" supportsGreatDemand="false" disablePriceDrop="false"/>
+            <fillType name="grass_windrow" priceScale="0" supportsGreatDemand="false" disablePriceDrop="false"/>
+            <fillType name="dryGrass_windrow" priceScale="0" supportsGreatDemand="false" disablePriceDrop="false"/>
+        </tipTrigger>
+        <tipTrigger index="BGA_BUNKER_SILO2" stationName="station_bgaBunkerSilo" appearsOnPDA="false" isAreaTrigger="true" isSellingPoint="false" triggerWidth="6">
+            <fillType name="chaff" priceScale="0" supportsGreatDemand="false" disablePriceDrop="false"/>
+            <fillType name="grass_windrow" priceScale="0" supportsGreatDemand="false" disablePriceDrop="false"/>
+            <fillType name="dryGrass_windrow" priceScale="0" supportsGreatDemand="false" disablePriceDrop="false"/>
+        </tipTrigger> -->
+        <!-- SELLING POINTS -->
+        <tipTrigger index="Centreville" stationName="Centreville" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="100000" fullPriceRecoverHours="48">
+            <fillType name="wheat" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+            <fillType name="barley" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+            <fillType name="rape" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+            <fillType name="sunflower" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+            <fillType name="soybean" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+            <fillType name="maize" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+            <fillType name="potato" priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="false"/>
+            <fillType name="sugarBeet" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+            <fillType name="oat" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        </tipTrigger>
+        <tipTrigger index="Davids_Farm" stationName="David's Farm" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
+            <fillType name="wheat" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+            <fillType name="barley" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+            <fillType name="rape" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+            <fillType name="sunflower" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+            <fillType name="soybean" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+            <fillType name="maize" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+            <fillType name="potato" priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="false"/>
+            <fillType name="sugarBeet" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+            <fillType name="oat" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        </tipTrigger>
+        <tipTrigger index="Andrews_Farm" stationName="Andrew's Farm" appearsOnPDA="true" appearsOnStats="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="80000" fullPriceRecoverHours="48">
+            <fillType name="manure" priceScale="1.3" supportsGreatDemand="false" disablePriceDrop="false"/>
+            <fillType name="liquidManure" priceScale="1.3" supportsGreatDemand="false" disablePriceDrop="false"/>
+            <fillType name="digestate" priceScale="1" supportsGreatDemand="false" disablePriceDrop="false" allowTrailers="true"/>
+        </tipTrigger>
+        <tipTrigger index="Janices_Wool" stationName="Janice's Wool" appearsOnPDA="true" isAreaTrigger="false" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="100000" fullPriceRecoverHours="48">
+            <fillType name="wool" priceScale="1" supportsGreatDemand="true" disablePriceDrop="true"/>
+        </tipTrigger>
+        <tipTrigger index="SAWMILL" stationName="Sawmill" appearsOnPDA="TRUE" isAreaTrigger="true" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
+            <fillType name="woodChips" priceScale="1" supportsGreatDemand="true" disablePriceDrop="true"/>
+        </tipTrigger>
+        <tipTrigger index="WINDROW_STORAGE" stationName="Farm_BGA_2" appearsOnPDA="false" isAreaTrigger="true" isSellingPoint="true" triggerWidth="6">
+            <fillType name="grass_windrow" priceScale="1" supportsGreatDemand="false" disablePriceDrop="true"/>
+            <fillType name="dryGrass_windrow" priceScale="1" supportsGreatDemand="false" disablePriceDrop="true"/>
+            <fillType name="straw" priceScale="1" supportsGreatDemand="false" disablePriceDrop="true"/>
+        </tipTrigger>
+        <tipTrigger index="WINDROW_STORAGE2" stationName="Farm_BGA_2" appearsOnPDA="false" isAreaTrigger="true" isSellingPoint="true" triggerWidth="6">
+            <fillType name="grass_windrow" priceScale="1" supportsGreatDemand="false" disablePriceDrop="true"/>
+            <fillType name="dryGrass_windrow" priceScale="1" supportsGreatDemand="false" disablePriceDrop="true"/>
+            <fillType name="straw" priceScale="1" supportsGreatDemand="false" disablePriceDrop="true"/>
+        </tipTrigger>
+        <tipTrigger index="WINDROW_STORAGE3" stationName="Farm_BGA_2" appearsOnPDA="false" isAreaTrigger="true" isSellingPoint="true" triggerWidth="6">
+            <fillType name="grass_windrow" priceScale="1" supportsGreatDemand="false" disablePriceDrop="true"/>
+            <fillType name="dryGrass_windrow" priceScale="1" supportsGreatDemand="false" disablePriceDrop="true"/>
+            <fillType name="straw" priceScale="1" supportsGreatDemand="false" disablePriceDrop="true"/>
+        </tipTrigger>
+    </tipTriggers>
+    <shop filename="$data/store/ui/shop.xml"/>
+    <colorGrading filename="$data/maps/mapBase_colorGrading.xml"/>
+    <storeItems filename="$data/maps/mapDE_storeItems.xml"/>
+    <wildlife filename="$dataS/character/wildlifeSpawner.xml"/>
+    <helpline filename="$dataS/helpLine.xml"/>
+    <gameplayHints filename="$dataS/gameplayHints.xml"/>
+    <husbandryAnimals filename="$dataS/character/husbandryAnimals.xml"/>
+    <animalNames filename="$dataS/character/animalNames.xml"/>
+    <husbandryFood filename="$dataS/character/husbandryFoodDefinition.xml"/>
+    <transportMissions filename="$data/maps/mapDE_transportMissions.xml"/>
+    <missionVehicles filename="$dataS/missionVehicles.xml"/>
+    <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+    <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+    <textureMemoryUsage>0</textureMemoryUsage>
+    <densityMap revision="1"/>
+    <terrainLodTexture revision="1"/>
+    <splitShapes revision="1"/>
+    <tipCollision revision="1"/>
+    <farmlands filename="maps/map_farmlands.xml"/>
+    <placementBlockingMap filename="$data/maps/mapBase/blockPlacementInfoLayer.grle" numChannels="1"/>
+    <groundTypeMappings>
+        <!-- Base -->
+        <groundTypeMapping type="dirt"         layer="ROUGHDIRT" />
+        <!-- Standard -->
+        <groundTypeMapping type="asphalt"      layer="ASPHALT" />
+        <groundTypeMapping type="gravel"       layer="GRAVEL" />
+        <groundTypeMapping type="grass"        layer="GRASS" />
+        <groundTypeMapping type="grassRough"   layer="GRASSROUGH" />
+        <groundTypeMapping type="sand"         layer="SANDWET" />
+        <groundTypeMapping type="animalMud"    layer="ANIMALMUD" />
+        <groundTypeMapping type="concrete"     layer="CONCRETE" />
+        <groundTypeMapping type="plates"       layer="PLATE" />
+        <groundTypeMapping type="cobblestones" layer="CONCRETE" />
+        <groundTypeMapping type="flagstones"   layer="CONCRETE" />
+        <!-- Special -->
+        <groundTypeMapping type="forestGround" layer="FORESTLEAVES" />
+        <groundTypeMapping type="rock"         layer="MOUNTAINROCK" />
+    </groundTypeMappings>
+	<paintableFoliages>
+        <paintableFoliage id="1" layerName="grass" firstDensityMapChannel="0" numDensityMapChannels="4" value="2"  />
+	</paintableFoliages>
+	<fillTypes filename="maps/maps_fillTypes.xml" />
+	<fruitTypes filename="maps/maps_fruitTypes.xml" />
+	<densityMapHeightTypes filename="maps/maps_densityMapHeightTypes.xml" />
+</map>
