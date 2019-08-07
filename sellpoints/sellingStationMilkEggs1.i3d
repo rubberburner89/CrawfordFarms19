@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="2" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+        <File fileId="3" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+    </Files>
+    <Materials>
+        <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1"/>
+        <Material name="warningStripes_mat" materialId="5" specularColor="0.494118 1 0.494118">
+            <Texture fileId="2"/>
+            <Normalmap fileId="3"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="sellingStationMilkEggs.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="sellingStationMilkEggs" nodeId="10">
+            <TransformGroup name="gameplay" nodeId="11">
+                <TransformGroup name="IN" nodeId="12">
+                    <TransformGroup name="unloadingStation" nodeId="13">
+                        <TransformGroup name="unloadingTriggers" nodeId="14">
+                            <Shape shapeId="1" name="exactFillRootNode" translation="0 -0.45 0" static="true" collisionMask="1073741824" nodeId="15" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                            <Shape shapeId="2" name="baleTrigger" translation="0 -0.45 0" static="true" trigger="true" collisionMask="16781312" nodeId="16" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                        </TransformGroup>
+                    </TransformGroup>
+                </TransformGroup>
+            </TransformGroup>
+            <Shape shapeId="3" name="sellingStationGenericWarningStripes" clipDistance="200" nodeId="17" materialIds="5" receiveShadows="true"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

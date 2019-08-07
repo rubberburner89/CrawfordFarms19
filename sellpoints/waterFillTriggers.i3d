@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files/>
+    <Materials>
+        <Material name="UnnamedMaterial" materialId="249" diffuseColor="1 1 1 1"/>
+    </Materials>
+    <Shapes externalShapesFile="waterFillTriggers.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="waterFillTriggers" nodeId="77379">
+            <Shape shapeId="1" name="cube" translation="137.382 122.567 459.255" rotation="0 -0.804613 0" scale="0.189 1 0.340218" static="true" trigger="true" collisionMask="1088421888" nodeId="77380" materialIds="249" nonRenderable="true" distanceBlending="false"/>
+            <Shape shapeId="2" name="cube" translation="387.275 141.126 162.664" scale="0.306971 1 0.331427" static="true" trigger="true" collisionMask="1088421888" nodeId="77381" materialIds="249" nonRenderable="true" distanceBlending="false"/>
+            <Shape shapeId="3" name="cube" translation="842.043 120.989 710.146" rotation="0 49.2481 0" scale="0.79 1 0.28" static="true" trigger="true" collisionMask="1088421888" nodeId="77382" materialIds="249" nonRenderable="true" distanceBlending="false"/>
+            <Shape shapeId="4" name="cube" translation="-537.766 119.71 -394.899" rotation="0 -4.17997 0" scale="1.31181 1 1.27336" static="true" trigger="true" collisionMask="1088421888" nodeId="77383" materialIds="249" nonRenderable="true" distanceBlending="false"/>
+            <Shape shapeId="5" name="cube" translation="-606.653 119.71 -380.608" rotation="0 -2.70444 0" scale="0.258177 1 0.330333" static="true" trigger="true" collisionMask="1088421888" nodeId="77384" materialIds="249" nonRenderable="true" distanceBlending="false"/>
+            <Shape shapeId="6" name="cube" translation="-680.107 119.71 -404.617" rotation="0 -15.1741 0" scale="0.363099 1 0.256688" static="true" trigger="true" collisionMask="1088421888" nodeId="77385" materialIds="249" nonRenderable="true" distanceBlending="false"/>
+            <Shape shapeId="7" name="cube" translation="107.821 143.118 -14.3615" rotation="0 30.9539 0" scale="0.043 1 0.0441411" static="true" trigger="true" collisionMask="1088421888" nodeId="77386" materialIds="249" nonRenderable="true" distanceBlending="false"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

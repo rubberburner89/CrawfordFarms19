@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="5" filename="$data/maps/textures/shared/numbers_diffuse.dds"/>
+        <File fileId="2" filename="$data/maps/textures/shared/weightDisplay_diffuse.dds"/>
+        <File fileId="3" filename="$data/maps/textures/shared/weightDisplay_normal.dds"/>
+        <File fileId="4" filename="$data/maps/textures/shared/weightDisplay_specular.dds"/>
+        <File fileId="6" filename="$data/shaders/numberShader.xml"/>
+    </Files>
+    <Materials>
+        <Material name="weightDisplay_mat" materialId="118">
+            <Texture fileId="2"/>
+            <Normalmap fileId="3"/>
+            <Glossmap fileId="4"/>
+        </Material>
+        <Material name="numbers_mat" materialId="120" customShaderId="6">
+            <Emissivemap fileId="5"/>
+            <CustomParameter name="number" value="-1 0 0 0"/>
+            <CustomParameter name="numberColor" value="1 0.5 0.25 1"/>
+        </Material>
+        <Material name="lambert1" materialId="107" diffuseColor="0.494118 0.494118 0.494118 1"/>
+    </Materials>
+    <Shapes externalShapesFile="BGA.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="BGA" nodeId="77108">
+            <TransformGroup name="bunker" translation="179.168 117.11 982.673" rotation="180 -47.625 180" nodeId="51856">
+                <TransformGroup name="unloadingStation" nodeId="51857">
+                    <Shape shapeId="1" name="exactFillRootNode" translation="-1.624 -0.72 2.88812" rotation="0 65 0" static="true" trigger="true" collisionMask="1073741824" nodeId="51858" materialIds="107" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                    <Shape shapeId="2" name="baleTrigger" translation="0.0948974 0.800998 -0.797484" rotation="0 65 0" static="true" trigger="true" collisionMask="16781312" nodeId="51859" materialIds="107" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                </TransformGroup>
+                <Shape shapeId="3" name="weightDisplay" translation="-4.27104 -0.486738 -1.86952" rotation="0 -18.342 0" static="true" clipDistance="300" nodeId="51860" materialIds="118" castsShadows="true" receiveShadows="true">
+                    <Shape shapeId="4" name="numberPart01" translation="0.647401 3.04655 0.0365678" nodeId="51861" materialIds="120" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="5" name="numberPart02" translation="0.557401 3.04655 0.0365678" nodeId="51862" materialIds="120" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="6" name="numberPart03" translation="0.467362 3.04655 0.0365678" nodeId="51863" materialIds="120" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="6" name="numberPart04" translation="0.377362 3.04655 0.0365678" nodeId="51864" materialIds="120" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="7" name="numberPart05" translation="0.287362 3.04655 0.0365678" nodeId="51865" materialIds="120" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="4" name="numberPart06" translation="0.197362 3.04655 0.0365678" nodeId="51866" materialIds="120" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="4" name="numberPart07" translation="0.107362 3.04655 0.0365678" nodeId="51867" materialIds="120" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="5" name="numberPart08" translation="0.0173616 3.04655 0.0365678" nodeId="51868" materialIds="120" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="6" name="numberPart09" translation="-0.0726384 3.04655 0.0365678" nodeId="51869" materialIds="120" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="6" name="numberPart10" translation="-0.162638 3.04655 0.0365678" nodeId="51870" materialIds="120" castsShadows="true" receiveShadows="true"/>
+                </Shape>
+                <TransformGroup name="soundNode" translation="0.426278 1.09279 -2.97073" nodeId="51871"/>
+                <Light name="light" translation="-4.25257 3.56796 -1.51383" nodeId="51872" type="point" color="1 0.2 0" emitDiffuse="true" emitSpecular="true" decayRate="4" range="1"/>
+            </TransformGroup>
+            <TransformGroup name="digestateSilo" translation="170 122.494 967.344" rotation="0 -70 0" clipDistance="77" nodeId="51896">
+                <TransformGroup name="loadingStation" nodeId="51897">
+                    <Shape shapeId="8" name="loadingTrigger" static="true" trigger="true" collisionMask="1073741824" nodeId="51898" materialIds="107" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                    <TransformGroup name="dischargeNode" translation="0 -4.31343 0" nodeId="51899"/>
+                </TransformGroup>
+                <TransformGroup name="storage" nodeId="51900"/>
+            </TransformGroup>
+            <TransformGroup name="bunkerSilos" translation="157.54 111.824 913.284" scale="0.656 1 1" clipDistance="800" nodeId="51901">
+                <TransformGroup name="bunkerSilo01" translation="-1.355 0 -6.78996" clipDistance="800" objectMask="65534" nodeId="51902">
+                    <Shape shapeId="9" name="interactionTrigger" scale="0.85 1 1" static="true" trigger="true" collisionMask="15736832" nodeId="51903" materialIds="107" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                    <TransformGroup name="bunkerSiloArea" translation="32.1778 0.00760651 -9.67468" nodeId="51904">
+                        <TransformGroup name="start" nodeId="51905"/>
+                        <TransformGroup name="width" translation="0 0 19.2" nodeId="51906"/>
+                        <TransformGroup name="height" translation="-64.2501 0 0" nodeId="51907"/>
+                    </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="bunkerSilo02" translation="-1.355 0 12.6218" clipDistance="800" objectMask="65534" nodeId="51908">
+                    <Shape shapeId="9" name="interactionTrigger" scale="0.85 1 0.93" static="true" trigger="true" collisionMask="15736832" nodeId="51909" materialIds="107" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                    <TransformGroup name="bunkerSiloArea" translation="32.0777 0.00760651 -8.88289" nodeId="51910">
+                        <TransformGroup name="start" nodeId="51911"/>
+                        <TransformGroup name="width" translation="0 0 17.78" nodeId="51912"/>
+                        <TransformGroup name="height" translation="-64.1024 0 0" nodeId="51913"/>
+                    </TransformGroup>
+                </TransformGroup>
+            </TransformGroup>
+        </TransformGroup>
+    </Scene>
+</i3D>

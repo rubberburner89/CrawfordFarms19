@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="AHSml_general" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="9" filename="$data/maps/textures/european/props/industrialWallLight_diffuse.png"/>
+        <File fileId="10" filename="$data/maps/textures/european/props/industrialWallLight_normal.png"/>
+        <File fileId="11" filename="$data/maps/textures/european/props/industrialWallLight_specular.png"/>
+        <File fileId="1" filename="$data/maps/textures/european/props/lightPoleSet_diffuse.png"/>
+        <File fileId="2" filename="$data/maps/textures/european/props/lightPoleSet_normal.png"/>
+        <File fileId="3" filename="$data/maps/textures/european/props/lightPoleSet_specular.png"/>
+        <File fileId="4" filename="$data/maps/textures/european/props/propsDecals_diffuse.png"/>
+        <File fileId="6" filename="$data/maps/textures/european/props/propsDecals_specular.png"/>
+        <File fileId="5" filename="$data/maps/textures/shared/default_normal.png"/>
+        <File fileId="7" filename="$data/shaders/decalShader.xml"/>
+    </Files>
+    <Materials>
+        <Material name="lightPoleSet_mat" materialId="25">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+        </Material>
+        <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1"/>
+        <Material name="propsDecals_mat" materialId="30" alphaBlending="true" customShaderId="7">
+            <Texture fileId="4"/>
+            <Normalmap fileId="5"/>
+            <Glossmap fileId="6"/>
+        </Material>
+        <Material name="industrialWallLight_mat" materialId="17">
+            <Texture fileId="9"/>
+            <Normalmap fileId="10"/>
+            <Glossmap fileId="11"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="Light.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="Light" nodeId="200">
+            <Shape shapeId="1" name="streetLightPoleLarge" translation="-46.9326 0.495456 -0.01675" rotation="180 90 180" clipDistance="100" nodeId="201" materialIds="25" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="decals" clipDistance="30" nodeId="202" materialIds="30" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="3" name="col" translation="-1.13481 3.96058 -4.00543e-07" visibility="false" static="true" density="0.0001" nodeId="203" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="industrialWallLight" translation="19.9203 6.67864 9.88586" rotation="5.49511e-05 90 5.42364e-05" clipDistance="50" nodeId="204" materialIds="17" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="5" name="col" visibility="false" static="true" density="0.0001" nodeId="205" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="industrialWallLight" translation="-19.9317 6.67864 9.88586" rotation="0 -90 0" clipDistance="50" nodeId="206" materialIds="17" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="5" name="col" visibility="false" static="true" density="0.0001" nodeId="207" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="1" name="streetLightPoleLarge" translation="-19.8027 0.495456 21.2846" rotation="180 90 180" clipDistance="100" nodeId="208" materialIds="25" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="decals" clipDistance="30" nodeId="209" materialIds="30" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="3" name="col" translation="-1.13481 3.96058 -4.00543e-07" visibility="false" static="true" density="0.0001" nodeId="210" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="1" name="streetLightPoleLarge" translation="1.56327 0.495456 21.2846" rotation="180 90 180" clipDistance="100" nodeId="211" materialIds="25" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="decals" clipDistance="30" nodeId="212" materialIds="30" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="3" name="col" translation="-1.13481 3.96058 -4.00543e-07" visibility="false" static="true" density="0.0001" nodeId="213" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="1" name="streetLightPoleLarge" translation="19.7299 0.495456 21.2846" rotation="180 90 180" clipDistance="100" nodeId="214" materialIds="25" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="decals" clipDistance="30" nodeId="215" materialIds="30" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="3" name="col" translation="-1.13481 3.96058 -4.00543e-07" visibility="false" static="true" density="0.0001" nodeId="216" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="1" name="streetLightPoleLarge" translation="29.8503 0.495456 -13.1117" rotation="180 90 180" clipDistance="100" nodeId="217" materialIds="25" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="decals" clipDistance="30" nodeId="218" materialIds="30" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="3" name="col" translation="-1.13481 3.96058 -4.00543e-07" visibility="false" static="true" density="0.0001" nodeId="219" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+        </TransformGroup>
+    </Scene>
+    <UserAttributes>
+        <UserAttribute nodeId="200">
+            <Attribute name="onCreate" type="scriptCallback" value="Nightlight2.onCreate"/>
+        </UserAttribute>
+    </UserAttributes>
+</i3D>

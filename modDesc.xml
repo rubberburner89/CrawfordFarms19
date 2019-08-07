@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="40">
+    <author>Rubberburner89</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Crawford Farms</en>
+        <de>Crawford Farms</de>
+        <fr>Crawford Farms</fr>
+    </title>
+    <description>
+        <en><![CDATA[Welcome to Crawford Farms (Seasons Mod Ready)... This map is based of the East Coast of Canada. A Google Earth image and correct terrain levels were used to correctly represent the area as close as possible.
+
+- The map includes all Farming Simulator 17 base features and much more...
+- Seasons Mod ready with Eastern Canada Geo installed
+- Compost Master, Bio Fuel Plant, and Liquid Fertilizer Production
+- Free Water
+- Animated Objects
+- Multi-Terrain and Mud Mod
+- 10 Gold Nuggets
+- 40 Fields from small to large (Missions on 39 of them)
+- Tons of forestry throughout the map
+- Chopped Straw
+- Fuel, Milk, & Liquid Fertilizer Sell Points
+- Note: AAA_UPK Mod is required for refillable fuel tank on the farm.
+
+Changelog: V1.0.0.1
+- Fixed seasons mod snow issue
+- Added trigger markers for fuel station and repair point at main farm
+- Lowered floating trigger marker at BGA
+- Removed snow from inside greenhouse
+- Fixed description. Map does not support sugar cane at this point in time.
+- Reduced file size
+- Replaced fuel station at main farm so you no longer need to run the AAA_UPK Mod-ready
+- Note: if you have stored fuel at this location it is suggested that you put it into a trailer before updating or all fuel will be lost.
+
+Changelog: V1.0.0.2
+- Fixed flickering objects such as roads
+- Added tree line to better represent the area
+- Opened up yard at animal dealer for easier turning with larger vehicles
+- Added a couple of mud holes in lower areas
+- Updated old lighting and added additional night lights
+- Added teleport location for the shop
+
+I hope you all enjoy the map!]]></en>
+        <de><![CDATA[Willkommen bei Crawford Farms (Seasons Mod-ready) ... Diese Karte basiert auf der Ostküste Kanadas. Ein Google Earth-Bild und korrekte Geländestufen wurden verwendet, um das Gebiet so genau wie möglich darzustellen.
+
+- Die Karte enthält alle Grundfunktionen des Farming Simulator 17 und vieles mehr ...
+- Die Karte ist für den Seasons-Mod und dem Ostkanada Geo-Mod vorbereitet
+- Kompost Master, Biokraftstoffanlage und Flüssigdüngerproduktion
+- kostenloses Wasser
+- Animierte Objekte
+- Multi-Terrain und Schlamm Mod
+- 10 Goldnuggets
+- 40 Felder von klein bis groß (Missionen auf 39 von ihnen vorhanden)
+- Tonnen von forstwirtschaft in der gesamten Karte
+- kompatibel mit dem Chopped Straw-Mod
+- Kraftstoff, Milch und Flüssigdünger
+- Hinweis: AAA_UPK Mod wird für nachfüllbaren Kraftstofftank auf dem Bauernhof benötigt.
+
+Changelog: V1.0.0.1
+- Problem mit Saisons-Mod-Schnee behoben
+- Triggermarker für Tankstelle und Reparaturstelle im Hauptbetrieb hinzugefügt
+- Schwebender Trigger-Marker bei BGA
+- Schnee aus dem Gewächshaus entfernt
+- Beschreibung korrigiert. Karte unterstützt zu diesem Zeitpunkt kein Zuckerrohr.
+- Reduzierte Dateigröße
+- Tankstelle in der Hauptfarm ersetzt, so dass du nicht mehr das AAA_UPK Mod-ready ausführen musst
+- Hinweis: Wenn Sie an dieser Stelle Kraftstoff gelagert haben, wird empfohlen, diesen vor der Aktualisierung in einen Anhänger zu legen, sonst geht der gesamte Kraftstoff verloren.
+
+Changelog: V1.0.0.2
+- Flackernde Objekte wie Straßen wurden korrigiert
+- Eine Baumgrenze hinzugefügt, um den Bereich besser darzustellen
+- Offener Hof beim Tierhändler für leichteres Wenden mit großen Fahrzeugen
+- In den unteren Bereichen wurden einige Schlammlöcher hinzugefügt
+- Alte Beleuchtung aktualisiert und zusätzliche Nachtbeleuchtung hinzugefügt
+- Teleport für den Shop hinzugefügt
+
+Ich hoffe euch allen gefällt die Map!]]></de>
+        <fr><![CDATA[Bienvenue à Crawford Farms (Seasons Mod Ready) ... Cette carte est basée sur la côte Est du Canada. Une image Google Earth et des niveaux de terrain corrects ont été utilisés pour représenter correctement la zone aussi près que possible.
+
+- La carte inclut toutes les fonctionnalités de base de Farming Simulator 17 et bien plus encore ...
+- Saisons Mod prêt avec Eastern Canada Geo installé
+- Maître composteur, biocarburant et production d'engrais liquide
+- Eau gratuite
+- Objets animés
+- Mod multi-terrain et boue
+- 10 pépites d'or
+- 40 champs de petite à grande (Missions sur 39 d'entre eux)
+- Des tonnes de forêts sur toute la carte
+- Paille hachée
+- Points de vente de carburant, de lait et d'engrais liquide
+- AAA_UPK Mod est requis pour le réservoir de carburant rechargeable à la ferme.
+
+Changelog: V1.0.0.1
+- Problème de neige mod de saisons fixes
+- Ajout de marqueurs de déclenchement pour la station-service et le point de réparation à la ferme principale
+- Marqueur de déclenchement flottant abaissé au BGA
+- Enlèvement de la neige de l'intérieur de la serre
+- Correction de la description. La carte ne supporte pas la canne à sucre à ce moment-là.
+- Taille de fichier réduite
+- Remplacement de la station-service à la ferme principale pour que vous n'ayez plus besoin de faire fonctionner le AAA_UPK Mod-ready
+- Remarque: si vous avez stocké du carburant à cet endroit, il est suggéré de le mettre dans une remorque avant la mise à jour ou tout le carburant sera perdu.
+
+Changelog: V1.0.0.2
+- Correction d'objets scintillants tels que les routes
+- Ajout d'une ligne d'arbre pour mieux représenter la zone
+- Ouvrir la cour au marchand d'animaux pour tourner plus facilement avec de gros véhicules
+- Ajout d'un couple de trous de boue dans les zones inférieures
+- Mise à jour de l'ancien éclairage et ajout de lumières de nuit supplémentaires
+- Ajout d'un emplacement de téléportation pour le magasin
+
+J'espère que vous apprécierez la carte!]]></fr>
+    </description>
+    <iconFilename>icon.png</iconFilename>
+    <multiplayer supported="true"/>
+    <maps>
+        <map id="SampleModMap" className="ModMap" filename="ModMap.lua" configFilename="maps/map.xml" defaultVehiclesXMLFilename="defaultVehicles.xml" defaultItemsXMLFilename="defaultItems.xml">
+            <title>
+                <en>Crawford Farms</en>
+                <de>Crawford Farms</de>
+                <fr>Crawford Farms</fr>
+            </title>
+            <description>
+                <en>Welcome to Crawford Farms with Seasons. Hope you enjoy it!</en>
+                <de>Willkommen in Crawford Farms mit Jahreszeiten. Hoffe es gefällt euch!</de>
+                <fr>Bienvenue à Crawford Farms avec Seasons. Je espère que vous l'apprécierez!</fr>
+            </description>
+            <iconFilename>map01_preview.png</iconFilename>
+        </map>
+    </maps>
+ <!--   <inputBindings>
+        <input name="ANIMATED_OBJECT_OPEN_DOOR" category="ONFOOT" key1="" key2="" device="0" button="BUTTON_3" mouse="MOUSE_BUTTON_LEFT"/>
+        <input name="ANIMATED_OBJECT_CLOSE_DOOR" category="ONFOOT" key1="" key2="" device="0" button="BUTTON_1" mouse="MOUSE_BUTTON_RIGHT"/>
+        <input name="LIGHTSWITCH_CLICK" category="ONFOOT" key1="" key2="" device="0" button="BUTTON_3" mouse="MOUSE_BUTTON_LEFT"/>
+        <input name="GATE_MOVE" category="ONFOOT" key1="" key2="" device="0" button="BUTTON_3" mouse="MOUSE_BUTTON_LEFT"/>
+    </inputBindings> -->
+
+	<storeItems>
+		<storeItem xmlFilename="sellpoints/bga.xml" />
+		<storeItem xmlFilename="sellpoints/sellingStationDavidsFarm.xml" />
+		<storeItem xmlFilename="sellpoints/sellingStationMilkEggs.xml" />
+		<storeItem xmlFilename="sellpoints/sellingStationWool.xml" />
+		<storeItem xmlFilename="sellpoints/sellingStationWood.xml" />
+		<storeItem xmlFilename="sellpoints/sellingStationWoodChips.xml" />
+		<storeItem xmlFilename="sellpoints/sellingStationGeneric1.xml" />
+		<storeItem xmlFilename="sellpoints/gasStation.xml" />
+		<storeItem xmlFilename="sellpoints/sellingStationVehicles.xml" />
+		<storeItem xmlFilename="sellpoints/sellingStationGrainBale.xml" />
+		<storeItem xmlFilename="sellpoints/waterFillTriggers.xml" />
+		<storeItem xmlFilename="sellpoints/schweinehof.xml" />
+	</storeItems>
+</modDesc>

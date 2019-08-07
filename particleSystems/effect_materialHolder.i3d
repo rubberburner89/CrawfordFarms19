@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="effect_materialHolder" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="../fillPlanes/rye_diffuse.png"/>
+    <File fileId="2" filename="../fillPlanes/rye_normal.png"/>
+    <File fileId="10" filename="$data/shaders/cultivatorSoilShader.xml"/>
+    <File fileId="7" filename="$data/shaders/grainSmokeShader.xml"/>
+    <File fileId="3" filename="$data/shaders/grainUnloadingShader.xml"/>
+    <File fileId="9" filename="$data/shaders/morphTargetShader.xml"/>
+    <File fileId="8" filename="$data/shaders/pipeUnloadingShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="rye_mat207" materialId="39" alphaBlending="true" customShaderId="10" customShaderVariation="LEVELER">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="VertxoffsetVertexdeformMotionUVscale" value="-35 1 0 5"/>
+    </Material>
+    <Material name="rye_mat206" materialId="27" customShaderId="8">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="uvScaleSpeedFreqAmp" value="1.1 6 3 0"/>
+      <CustomParameter name="shapeScaleSpread" value="0.4 0.2 1 0"/>
+      <CustomParameter name="controlPoint" value="10 0 0 0"/>
+      <CustomParameter name="alphaRemap" value="0.25 1 0 0"/>
+    </Material>
+    <Material name="rye_mat205" materialId="12" customShaderId="9" customShaderVariation="ALPHA_DISABLE">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="morphPosition" value="0 1 1 0"/>
+      <CustomParameter name="offsetUV" value="0 0 -100 100"/>
+      <CustomParameter name="alphaRemap" value="0.2 1 0 0"/>
+      <CustomParameter name="uvScale" value="1.5 1.5 1 1"/>
+      <CustomParameter name="vertexAnim" value="20 20 0.05 1"/>
+    </Material>
+    <Material name="rye_mat203" materialId="13" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="3 -2 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.05"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.0005 0.1"/>
+    </Material>
+    <Material name="rye_mat" materialId="15" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="3 -2 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.025"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.0005 0.1"/>
+    </Material>
+    <Material name="smoke_woodChips" materialId="35" diffuseColor="0.494118 0.494118 0.494118 1" alphaBlending="true" customShaderId="7">
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="0.75 0.1 -0.3 0"/>
+      <CustomParameter name="ColorAlpha" value="0.26 0.177 0.099 2"/>
+    </Material>
+    <Material name="rye_mat204" materialId="36" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="3 -2 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.15"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.0005 0.1"/>
+    </Material>
+    <Material name="rye_mat208" materialId="19" customShaderId="8" customShaderVariation="BEND_PARABOLA">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="uvScaleSpeedFreqAmp" value="1.1 6 3 0"/>
+      <CustomParameter name="shapeScaleSpread" value="0.4 0.2 1 0"/>
+      <CustomParameter name="controlPoint" value="10 0 0 0"/>
+      <CustomParameter name="alphaRemap" value="0.25 1 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="effect_materialHolder.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="unloading" clipDistance="10" nodeId="45">
+      <TransformGroup name="rye" clipDistance="10" nodeId="58">
+        <Shape shapeId="1" name="rye0_025_materialHolder" clipDistance="10" nodeId="59" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="rye0_05_materialHolder" clipDistance="10" nodeId="60" materialIds="13" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="rye0_15_materialHolder" clipDistance="10" nodeId="61" materialIds="36" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="smoke" clipDistance="10" nodeId="66">
+      <TransformGroup name="rye" clipDistance="10" nodeId="73">
+        <Shape shapeId="2" name="rye_materialHolder" clipDistance="10" nodeId="74" materialIds="35" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="straw" clipDistance="10" nodeId="77"/>
+    <TransformGroup name="chopper" clipDistance="10" nodeId="78"/>
+    <TransformGroup name="soil" clipDistance="10" nodeId="79"/>
+    <TransformGroup name="sprayer" clipDistance="10" nodeId="80"/>
+    <TransformGroup name="spreader" clipDistance="10" nodeId="81"/>
+    <TransformGroup name="pipe" clipDistance="10" nodeId="82">
+      <TransformGroup name="rye" nodeId="92">
+        <Shape shapeId="3" name="rye_1_materialHolder" clipDistance="10" nodeId="93" materialIds="27" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="rye_2_materialHolder" clipDistance="10" nodeId="94" materialIds="19" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="mower" clipDistance="10" nodeId="98"/>
+    <TransformGroup name="belt" clipDistance="10" nodeId="99">
+      <TransformGroup name="rye" clipDistance="10" nodeId="106">
+        <Shape shapeId="4" name="rye0_materialHolder" clipDistance="10" nodeId="107" materialIds="12" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="leveler" nodeId="110">
+      <Shape shapeId="3" name="rye" clipDistance="10" nodeId="114" materialIds="39" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="washer" nodeId="116"/>
+    <TransformGroup name="pickup" clipDistance="10" nodeId="117"/>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="59">
+      <Attribute name="fillType" type="string" value="rye"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="60">
+      <Attribute name="fillType" type="string" value="rye"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="61">
+      <Attribute name="fillType" type="string" value="rye"/>
+      <Attribute name="materialIndex" type="string" value="3"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="74">
+      <Attribute name="fillType" type="string" value="rye"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="smoke"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="93">
+      <Attribute name="fillType" type="string" value="rye"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="PIPE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="94">
+      <Attribute name="fillType" type="string" value="rye"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="PIPE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="107">
+      <Attribute name="fillType" type="string" value="rye"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="belt"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="114">
+      <Attribute name="fillType" type="string" value="rye"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="LEVELER"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

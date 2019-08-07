@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="2" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+        <File fileId="3" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+        <File fileId="4" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+    </Files>
+    <Materials>
+        <Material name="warningStripes_mat" materialId="296">
+            <Texture fileId="2"/>
+            <Normalmap fileId="3"/>
+            <Glossmap fileId="4"/>
+        </Material>
+        <Material name="lambert1" materialId="420" diffuseColor="0.494118 0.494118 0.494118 1"/>
+    </Materials>
+    <Shapes externalShapesFile="sellingStationGrainBale.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="animalGrainBaleSales" translation="-269.528 124.097 -536.26" nodeId="77291">
+            <TransformGroup name="gameplay" translation="-6.38762 1.29111 -1.35059" rotation="0 90 0" scale="0.732109 1 1" nodeId="77315">
+                <TransformGroup name="IN" nodeId="77316">
+                    <TransformGroup name="unloadingStation" nodeId="77317">
+                        <TransformGroup name="unloadingTriggers" nodeId="77318">
+                            <Shape shapeId="1" name="exactFillRootNode" translation="0 -0.45 0" static="true" collisionMask="1073741824" nodeId="77319" materialIds="420" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                            <Shape shapeId="2" name="baleTrigger" translation="0 -0.45 0" static="true" trigger="true" collisionMask="16781312" nodeId="77320" materialIds="420" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                        </TransformGroup>
+                    </TransformGroup>
+                </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="sellingStationBales" translation="0 0 -1.294" nodeId="77309">
+                <Shape shapeId="3" name="exactFillRootNode" static="true" collisionMask="1073741824" nodeId="77310" materialIds="420" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                <Shape shapeId="4" name="baleTrigger" translation="0.306272 2.48583 0" static="true" trigger="true" collisionMask="16781312" nodeId="77311" materialIds="420" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="warningStripesAnimalDealer" translation="1.449 0 -7.20378" nodeId="77321">
+                <Shape shapeId="5" name="warningStripesCorner2" translation="-4.97864 0 9.979" rotation="180 -0 180" clipDistance="200" nodeId="77322" materialIds="296" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="6" name="warningStripesCorner1" translation="-4.96649 0 1.956" clipDistance="200" nodeId="77323" materialIds="296" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="5" name="warningStripesCorner2" translation="2.534 0 1.956" clipDistance="200" nodeId="77324" materialIds="296" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="6" name="warningStripesCorner1" translation="2.534 0 9.958" rotation="180 -5.00896e-06 180" clipDistance="200" nodeId="77325" materialIds="296" receiveShadows="true" decalLayer="1"/>
+            </TransformGroup>
+        </TransformGroup>
+    </Scene>
+</i3D>

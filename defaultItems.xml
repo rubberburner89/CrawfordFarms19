@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<items>
+<!--    <item mapBoundId="sellingStationPort01" className="SellingStationPlaceable" filename="$data/placeables/mapDE/sellingStationGeneric/sellingStationPort01.xml" position="722 56.4 812" rotation="0 90 0" /> -->
+    <item mapBoundId="sellingStationAnimal01" className="SellingStationPlaceable" filename="$mapdir$/sellpoints/sellingStationGrainBale.xml" position="-269.528 124.097 -536.26" rotation="0 0 0" /> 
+    <item mapBoundId="sellingStationMill01" className="SellingStationPlaceable" filename="$mapdir$/sellpoints/sellingStationGeneric1.xml" position="127.897 127.081 -930.787" rotation="0 0 0" /> 
+    <item mapBoundId="sellingStation" className="SellingStationPlaceable" filename="$mapdir$/sellpoints/sellingStationDavidsFarm.xml" position="243.815 119.434 951.082" rotation="-0.162 -32.654 1.501" /> 
+    <item mapBoundId="sellingStation01" className="SellingStationPlaceable" filename="$mapdir$/sellpoints/sellingStationMilkEggs.xml" position="109.896 128.12 244.007" rotation="-180 -89.092 -180" /> 
+<!--    <item mapBoundId="railroadSilo01" className="SiloPlaceable" filename="$data/placeables/mapDE/railroadSilo01/railroadSilo01.xml" position="-450 89.5 -715" rotation="0 45 0" />
+    <item mapBoundId="railroadSilo02" className="SiloPlaceable" filename="$data/placeables/mapDE/railroadSilo02/railroadSilo02.xml" position="-737.5 57 111" rotation="0 270 0" />
+    <item mapBoundId="sellingStationBales" className="SellingStationPlaceable" filename="$data/placeables/mapDE/sellingStationBales/sellingStationBales.xml" position="-570.5 85 470.5" rotation="0 0 0" /> -->
+    
+    <item mapBoundId="sellingStationWood" className="WoodSellStationPlaceable" filename="$mapdir$/sellpoints/sellingStationWood.xml" position="0 0 0" rotation="0 0 0" />
+    <item mapBoundId="sellingStationWoodChips" className="SellingStationPlaceable" filename="$mapdir$/sellpoints/sellingStationWoodChips.xml" position="252.553 126.651 -986.383" rotation="0 70.773 0" />
+    
+    <item mapBoundId="sellingStationWool" className="SellingStationPlaceable" filename="$mapdir$/sellpoints/sellingStationWool.xml" position="13.516 118.246 337.472" rotation="0 0 0" />
+    
+   <item mapBoundId="sellingStationVehicles" className="Workshop" filename="$mapdir$/sellpoints/sellingStationVehicles.xml" position="201.542 127.514 -937.464" rotation="-180 -90 -180" /> 
+    
+    <item mapBoundId="gasStation01" className="BuyingStationPlaceable" filename="$mapdir$/sellpoints/gasStation.xml" position="183.953 128 -897.698" rotation="0 0 0" /> 
+	
+    <item mapBoundId="bga" className="BgaPlaceable" filename="$mapdir$/sellpoints/bga.xml" position="0 0 0" rotation="0 0 0" />
+    
+    <item mapBoundId="waterFillTriggers" className="BuyingStationPlaceable" filename="$mapdir$/sellpoints/waterFillTriggers.xml" position="0 3 0" rotation="0 0 0" />
+	
+<!--   <item mapBoundId="limeStation1" className="BuyingStationPlaceable" filename="$data/placeables/limeStation/limeStation.xml" position="-890 56.4 -782" rotation="0 0 0" />
+    <item mapBoundId="limeStation2" className="BuyingStationPlaceable" filename="$data/placeables/limeStation/limeStation02.xml" position="806 56.4 786" rotation="0 0 0" /> -->
+    
+	<item className="SiloPlaceable" filename="$mapdir$/sellpoints/farmSiloLarge.xml" position="59.413 139.56 -84.926" rotation="0 -1.133 0" defaultFarmProperty="true" farmId="1" />
+	<item className="AnimalHusbandry" filename="$mapdir$/sellpoints/schweinehof.xml" position="3.143 139.67 -97.467" rotation="-180 90 -180" defaultFarmProperty="true" farmId="1"/>
+<!--	<item className="Placeable" filename="$data/placeables/mapDE/farmBuildings/farmBarn.xml" position="-51.06 67.01 234.63" rotation="0 270 0" defaultFarmProperty="true" farmId="1"/>
+	<item className="Placeable" filename="$data/placeables/mapDE/farmBuildings/farmStorageBarn.xml" position="-16.213 66.986 232.662" rotation="0 270 0" defaultFarmProperty="true" farmId="1"/>
+	<item className="FarmhousePlaceable" filename="$data/placeables/mapDE/farmBuildings/farmHousePreplaced.xml" position="-31.64 66.9 273.4" rotation="0 270 0" defaultFarmProperty="true" farmId="1"/> -->
+</items>
